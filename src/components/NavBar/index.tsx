@@ -1,26 +1,14 @@
-"use client";
 import React from "react";
 import "./NavBar.css";
-import { useState } from "react";
 import Image from "next/image";
 import logoImg from "../../assets/logo.png";
 import flag from "../../assets/brazil_flag.png";
 import { SlArrowDown } from "react-icons/sl";
 
 export default function NavBar() {
-  const [showSideBar, setShowSideBar] = useState(false);
   return (
     <nav>
-      {showSideBar && (
-        <div
-          className="aside__overlay"
-          onClick={() => setShowSideBar(!showSideBar)}
-        ></div>
-      )}
-      <div
-        className="logo_box"
-        onClick={() => scroll.scrollToTop({ duration: 500 })}
-      >
+      <div>
         <Image src={logoImg} alt="Logo" className="logo_img" />
       </div>
       <div className="nav_box">
