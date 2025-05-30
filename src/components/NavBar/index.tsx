@@ -8,25 +8,27 @@ import { SlArrowDown } from "react-icons/sl";
 export default function NavBar() {
   return (
     <nav>
-      <div>
-        <Image src={logoImg} alt="Logo" className="logo_img" />
-      </div>
-      <div className="nav_box">
-        <div className="nav_box">
-          <div className="nav_item">Início</div>
-          <div className="nav_item">Servidores VPS</div>
-          <div className="nav_item">Servidores Dedicados</div>
-          <div className="nav_item">Rede</div>
-          <div className="nav_item">Anti-DDoS</div>
+      <div className="container_nav">
+        <div>
+          <Image src={logoImg} alt="Logo" className="logo_img" />
         </div>
-        <div className="nav_buttons">
-          <div className="nav_item">Entrar</div>
-          <div className="nav_button">Cadastre-se</div>
-          <div className="nav_button_full">Contato</div>
-          <div className="lang_selector">
-            <Image src={flag} alt="Idioma" />
-            <div>PT-BR</div>
-            <SlArrowDown />
+        <div className="nav_box">
+          <div className="nav_box">
+            <div className="nav_item">Início</div>
+            <div className="nav_item">Servidores VPS</div>
+            <div className="nav_item">Servidores Dedicados</div>
+            <div className="nav_item">Rede</div>
+            <div className="nav_item">Anti-DDoS</div>
+          </div>
+          <div className="nav_buttons">
+            <div className="nav_item">Entrar</div>
+            <div className="nav_button">Cadastre-se</div>
+            <div className="nav_button_full">Contato</div>
+            <div className="lang_selector">
+              <Image src={flag} alt="Idioma" />
+              <div>PT-BR</div>
+              <SlArrowDown />
+            </div>
           </div>
         </div>
       </div>

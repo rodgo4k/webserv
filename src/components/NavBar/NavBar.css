@@ -3,11 +3,18 @@ nav {
   height: 72px;
   background: linear-gradient(to right, #3500c6 0, #25057c 100%);
   align-items: center;
-  justify-content: space-between;
-  padding-right: 75px;
-  padding-left: 75px;
+  justify-content: center;
+  padding-right: 80px;
+  padding-left: 80px;
   border-bottom: 1px solid;
   border-image: linear-gradient(to right, #3500c6, #fefefe, #25057c) 1;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container_nav {
+  align-items: center;
+  justify-content: space-between;
   display: flex;
   flex-wrap: nowrap;
 }
