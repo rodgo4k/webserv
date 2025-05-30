@@ -65,3 +65,29 @@
 .card_description {
   font-weight: 500;
 }
+
+@media (max-width: 770px) {
+  .container_d {
+    height: fit-content;
+    padding: 16px;
+    gap: 16px;
+  }
+  .cards_d {
+    display: grid;
+  }
+
+  .card_description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title_d {
+    font-size: 24px;
+  }
+
+  .card_d {
+    height: fit-content;
+    padding: 32px;
+  }
+}

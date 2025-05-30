@@ -10,6 +10,8 @@ nav {
   border-image: linear-gradient(to right, #3500c6, #fefefe, #25057c) 1;
   display: flex;
   flex-wrap: nowrap;
+  position: fixed;
+  z-index: 50;
 }
 
 .container_nav {

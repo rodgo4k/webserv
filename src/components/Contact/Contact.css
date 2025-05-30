@@ -115,3 +115,44 @@
   background: #7846ff;
   font-size: 18px;
 }
+
+@media (max-width: 770px) {
+  .contact_container {
+    padding: 16px;
+  }
+
+  .text_container_contact {
+    width: 720px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact_container {
+    height: fit-content;
+    padding: 24px;
+  }
+  .text_container_contact {
+    width: fit-content;
+    gap: 16px;
+  }
+
+  .contact_title {
+    font-size: 24px;
+  }
+
+  .contact_description {
+    font-size: 16px;
+  }
+
+  .contact_buttons {
+    display: grid;
+  }
+
+  .button1 {
+    width: 247px;
+  }
+
+  .button2 {
+    width: 247px;
+  }
+}

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 520px;
+  height: 550px;
   background: linear-gradient(to right, #3500c6 0, #25057c 100%);
   padding: 48px;
   overflow: hidden;
@@ -16,11 +16,12 @@
   position: relative;
   width: 1400px;
   height: 520px;
+  margin-top: 50px;
 }
 
 .text_container {
   display: grid;
-  gap: 24px;
+  gap: 40px;
 }
 
 .description_container {
@@ -107,5 +108,59 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsividade */
+
+@media (max-width: 770px) {
+  .container {
+    height: 600px;
+  }
+
+  .banner_container {
+    display: grid;
+    height: fit-content;
+  }
+
+  .text_container {
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .bg_image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: fit-content;
+  }
+  .text_container {
+    width: 380px;
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 32px;
+    width: fit-content;
+  }
+
+  .description_container {
+    font-size: 16px;
+    width: fit-content;
+  }
+
+  .description {
+    width: fit-content;
+  }
+
+  .buttons {
+    display: grid;
   }
 }

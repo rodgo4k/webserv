@@ -77,3 +77,23 @@
 .know_more:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 770px) {
+  .services {
+    display: grid;
+    gap: 20px;
+  }
+
+  .service {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .services_title {
+    text-align: center;
+    font-size: 24px;
+  }
+}

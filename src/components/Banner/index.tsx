@@ -41,8 +41,12 @@ export default function Banner() {
             </div>
           </div>
         </div>
-        <div className="bg_image">
-          <Image src={bgbanner} alt="Animated Background" />
+        <div>
+          <Image
+            className="bg_image"
+            src={bgbanner}
+            alt="Animated Background"
+          />
         </div>
       </div>
     </div>

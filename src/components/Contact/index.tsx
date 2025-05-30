@@ -10,7 +10,7 @@ export default function Contact() {
     <div className="contact_container">
       <div className="text_container_contact">
         <div className="contact_title">
-          Quer mais conhecer mais dos nossos serviços?
+          Quer conhecer mais dos nossos serviços?
         </div>
         <div className="contact_description">
           Entre em contato conosco clicando no botão no abaixo para conhecer
