@@ -38,7 +38,11 @@ export default function Footer() {
             <div className="footer_title">Pague Com</div>
             <div className="payments_container">
               <div className="payments">
-                <Image src={cards_logo} alt="Cartões" />
+                <Image
+                  className="payments_img"
+                  src={cards_logo}
+                  alt="Cartões"
+                />
               </div>
             </div>
           </div>
@@ -49,9 +53,11 @@ export default function Footer() {
           </div>
           <div className="social">
             <div className="footer_title">Fique por dentro de tudo</div>
-            <FaWhatsapp size={24} className="social_icon" />
-            <FaInstagram size={24} className="social_icon" />
-            <FaFacebook size={24} className="social_icon" />
+            <div className="social_icons">
+              <FaWhatsapp size={24} className="social_icon" />
+              <FaInstagram size={24} className="social_icon" />
+              <FaFacebook size={24} className="social_icon" />
+            </div>
           </div>
         </div>
         <div className="footer_content3">

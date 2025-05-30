@@ -91,6 +91,11 @@
   gap: 16px;
 }
 
+.social_icons {
+  display: flex;
+  gap: 16px;
+}
+
 .social_icon:hover {
   cursor: pointer;
 }
@@ -99,4 +104,47 @@
   text-align: center;
   color: #d4d4d8;
   font-size: 12px;
+}
+
+@media (max-width: 770px) {
+  .footer_container {
+    height: fit-content;
+    padding: 24px;
+  }
+
+  .footer_content,
+  .footer_content1,
+  .footer_logo,
+  .footer_section1,
+  .footer_section2,
+  .footer_section3,
+  .footer_title,
+  .footer_links_sections,
+  .footer_content2,
+  .safe_browsing,
+  .social {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 16px;
+  }
+
+  .footer_title,
+  .footer_description,
+  .footer_link {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_title {
+    font-size: 20px;
+  }
+
+  .payments_img {
+    width: 250px;
+    height: 80px;
+  }
 }
