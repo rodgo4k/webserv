@@ -8,7 +8,7 @@ import flag from "../../assets/brazil_flag.png";
 import { SlArrowDown } from "react-icons/sl";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
-import { IoIosClose } from "react-icons/io";
+import Link from "next/link";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,20 +18,38 @@ export default function NavBar() {
       <nav>
         <div className="container_nav">
           <div>
-            <Image src={logoImg} alt="Logo" className="logo_img" />
+            <Link href="/">
+              <Image src={logoImg} alt="Logo" className="logo_img" />
+            </Link>
           </div>
           <div className="nav_box">
             <div className="nav_box">
-              <div className="nav_item">Início</div>
-              <div className="nav_item">Servidores VPS</div>
-              <div className="nav_item">Servidores Dedicados</div>
-              <div className="nav_item">Rede</div>
-              <div className="nav_item">Anti-DDoS</div>
+              <div className="nav_item">
+                <Link href="/">Início</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/ServidoresVPS">Servidores VPS</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/ServidoresDedicados">Servidores Dedicados</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/Rede">Rede</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/AntiDDoS">Anti-DDoS</Link>
+              </div>
             </div>
             <div className="nav_buttons">
-              <div className="nav_item">Entrar</div>
-              <div className="nav_button">Cadastre-se</div>
-              <div className="nav_button_full">Contato</div>
+              <div className="nav_item">
+                <Link href="/">Entrar</Link>
+              </div>
+              <div className="nav_button">
+                <Link href="/">Cadastre-se</Link>
+              </div>
+              <div className="nav_button_full">
+                <Link href="/Contato">Contato</Link>
+              </div>
               <div className="lang_selector">
                 <Image src={flag} alt="Idioma" />
                 <div>PT-BR</div>
@@ -60,14 +78,30 @@ export default function NavBar() {
 
           {isOpen && (
             <div className="menu_section2">
-              <div className="nav_item">Início</div>
-              <div className="nav_item">Servidores VPS</div>
-              <div className="nav_item">Servidores Dedicados</div>
-              <div className="nav_item">Rede</div>
-              <div className="nav_item">Anti-DDoS</div>
-              <div className="nav_item">Entrar</div>
-              <div className="nav_item">Cadastre-se</div>
-              <div className="nav_item">Contato</div>
+              <div className="nav_item">
+                <Link href="/">Início</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/ServidoresVPS">Servidores VPS</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/ServidoresDedicados">Servidores Dedicados</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/Rede">Rede</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/AntiDDoS">Anti-DDoS</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/">Entrar</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/">Cadastre-se</Link>
+              </div>
+              <div className="nav_item">
+                <Link href="/Contato">Contato</Link>
+              </div>
             </div>
           )}
         </div>
