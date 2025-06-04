@@ -1,0 +1,128 @@
+.prices_container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  gap: 32px;
+  background: radial-gradient(circle, #1a2036 0%, #0e0e16 100%);
+  color: #fefefe;
+}
+
+.prices_title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.prices_content1 {
+  display: grid;
+  gap: 16px;
+}
+
+.price_card {
+  background: #006fcf;
+  border: 1px solid #fefefe;
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 16px;
+  display: grid;
+  gap: 16px;
+  transition: background ease 1s;
+}
+
+.price_card:hover {
+  background: #fefefe;
+}
+
+.price_card_title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  transition: color ease 1s, font-weight ease 1s;
+}
+
+.price_card:hover .price_card_title {
+  color: #006fcf;
+  font-weight: 600;
+}
+
+.price_card_item {
+  display: grid;
+  gap: 8px;
+  color: #0c2424;
+}
+
+.prices_cards {
+  display: flex;
+  gap: 16px;
+}
+
+.price_card_description {
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.price {
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fefefe;
+  transition: color ease 1s;
+}
+
+.price_card:hover .price {
+  color: #006fcf;
+}
+
+.price_symbol {
+  font-weight: 600;
+  font-size: 32px;
+  transition: font-size ease 1s;
+}
+
+.price_card:hover .price_symbol {
+  font-size: 36px;
+}
+
+.price_text {
+  transition: font-weight ease 1s, font-size ease 1s;
+}
+
+.price_card:hover .price_text {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.sign_now {
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  padding: 8px;
+  background: #0f2424;
+  border: 1px solid #1dc8c8;
+  border-radius: 4px;
+  color: #fefefe;
+  font-size: 14px;
+  transition: background 1s ease, font-size 1s ease;
+}
+
+.sign_now:hover {
+  background: #006fcf;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .prices_title {
+    font-size: 24px;
+  }
+
+  .prices_cards {
+    display: grid;
+  }
+}
