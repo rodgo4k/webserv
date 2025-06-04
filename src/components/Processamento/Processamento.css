@@ -1,0 +1,75 @@
+.container_process {
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../assets/bg_vps.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fefefe;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  gap: 24px;
+}
+
+.process_title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.process_card {
+  cursor: pointer;
+  width: 1200px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: #fefefe;
+  color: #006fcf;
+  font-weight: 500;
+  border-radius: 30px;
+  border: #006fcf 1px solid;
+}
+
+.process_card_text {
+  font-size: 24px;
+  text-align: center;
+  transition: font-size ease 1s;
+}
+
+.process_card_text:hover {
+  font-size: 26px;
+}
+
+@media (max-width: 480px) {
+  .container_process {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .process_card {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 8px;
+  }
+
+  .process_title {
+    font-size: 24px;
+  }
+
+  .process_card_text {
+    font-size: 16px;
+  }
+}

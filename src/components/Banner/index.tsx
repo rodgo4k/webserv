@@ -5,6 +5,7 @@ import Image from "next/image";
 import vpsicon from "../../assets/icons/VPS.svg";
 import dedicadosicon from "../../assets/icons/Dedicados.svg";
 import bgbanner from "../../assets/bg.png";
+import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -31,13 +32,17 @@ export default function Banner() {
             </div>
           </div>
           <div className="buttons">
-            <div className="vps_button">
-              <Image src={vpsicon} alt="Servidores VPS" />
-              <div className="button_name">Servidores VPS</div>
+            <div>
+              <Link href="/ServidoresVPS" className="vps_button">
+                <Image src={vpsicon} alt="Servidores VPS" />
+                <div className="button_name">Servidores VPS</div>
+              </Link>
             </div>
-            <div className="dedicados_button">
-              <Image src={dedicadosicon} alt="Servidores Dedicados" />
-              <div className="button_name">Servidores Dedicados</div>
+            <div>
+              <Link href="/ServidoresDedicados" className="dedicados_button">
+                <Image src={dedicadosicon} alt="Servidores Dedicados" />
+                <div className="button_name">Servidores Dedicados</div>
+              </Link>
             </div>
           </div>
         </div>
