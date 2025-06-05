@@ -1,5 +1,5 @@
 import React from "react";
-import "./Rede_Dedicados.css";
+import "./Rede_dedicados.css";
 import { GoShieldCheck } from "react-icons/go";
 import { FaCheckCircle } from "react-icons/fa";
 
