@@ -9,7 +9,8 @@ export default function Banner_VPS() {
       <div className="banner_container">
         <div className="text_container">
           <div className="title">
-            Nossa hospedagem VPS conta com Alto Desempenho
+            Nossa hospedagem VPS conta com{" "}
+            <span className="green">Alto Desempenho</span>
           </div>
           <div className="description_container">
             <div className="description">

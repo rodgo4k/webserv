@@ -12,7 +12,10 @@ export default function Banner() {
     <div className="container">
       <div className="banner_container">
         <div className="text_container">
-          <div className="title">Soluções de Hospedagem de Alto Desempenho</div>
+          <div className="title">
+            Soluções de Hospedagem de{" "}
+            <span className="green">Alto Desempenho</span>
+          </div>
           <div className="description_container">
             <div className="description">
               Tenha acesso a um desempenho excepcional com nossa infraestrutura

@@ -17,9 +17,34 @@
   font-weight: 600;
 }
 
-.prices_content1 {
+.prices_content {
   display: grid;
   gap: 16px;
+}
+
+.prices_section_description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prices_section_title {
+  font-size: 16px;
+}
+
+.includes {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.include {
+  background: #fefefe;
+  color: #006fcf;
+  border: #006fcf 1px solid;
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
 }
 
 .price_card {
@@ -57,6 +82,8 @@
 
 .prices_cards {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -124,5 +151,27 @@
 
   .prices_cards {
     display: grid;
+  }
+
+  .prices_section_description {
+    display: grid;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .prices_section_title {
+    text-align: center;
+  }
+
+  .includes {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .include {
+    width: fit-content;
   }
 }

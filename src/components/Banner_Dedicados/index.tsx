@@ -8,7 +8,9 @@ export default function Banner_Dedicados() {
     <div className="container">
       <div className="banner_container">
         <div className="text_container">
-          <div className="title">Servidores Bare Metal</div>
+          <div className="title">
+            Servidores <span className="green">Bare Metal</span>
+          </div>
           <div className="description_container">
             <div className="description">
               Servidores dedicados de alto desempenho com acesso total ao
