@@ -48,3 +48,14 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 480px) {
+  .loading_container {
+    display: grid;
+  }
+
+  .bg_img {
+    width: 200px;
+    height: 200px;
+  }
+}
