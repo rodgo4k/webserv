@@ -1,6 +1,5 @@
 import React from "react";
 import "./Services_Rede.css";
-import { IoCloudDoneOutline } from "react-icons/io5";
 import { TbWorldCode } from "react-icons/tb";
 import { FaWifi } from "react-icons/fa6";
 
