@@ -1,6 +1,7 @@
 import React from "react";
 import "./Services_Rede.css";
 import { TbWorldCode } from "react-icons/tb";
+import { GoShieldCheck } from "react-icons/go";
 import { FaWifi } from "react-icons/fa6";
 
 export default function Services_Rede() {
@@ -14,31 +15,35 @@ export default function Services_Rede() {
             Capacidade de 500+ Gbps
           </div>
           <div className="service_description grow_text">
-            Infraestrutura virtual com hardware dedicado, garantindo desempenho
-            exclusivo e isolado
+            Conexões redundantes com múltiplos uplinks de 100GE garantem alta
+            disponibilidade, agora com suporte a expansão automática de largura
+            de banda sob demanda
+          </div>
+        </div>
+        <div className="service">
+          <div className="service_icon">
+            <GoShieldCheck size={64} />
+          </div>
+          <div className="service_title grow_title">
+            348 Tbps Proteção de Dados
+          </div>
+          <div className="service_description grow_text">
+            Infraestrutura integrada ao Cloudflare Magic Transit para segurança
+            robusta., inclui mitigação proativa contra ataques DDoS em tempo
+            real
           </div>
         </div>
         <div className="service">
           <div className="service_icon">
             <TbWorldCode size={64} />
           </div>
-          <div className="service_title grow_title">Mitigação DDoS</div>
-          <div className="service_description grow_text">
-            Proteção robusta com capacidade de mitigaçãode 348 Tbps, integrada
-            ao Cloudflare Magic Transit para defesa em tempo real contra
-            ataques.
-          </div>
-        </div>
-        <div className="service">
-          <div className="service_icon">
-            <FaWifi size={64} />
-          </div>
           <div className="service_title grow_title">
-            Conectividade Otimizada
+            Peering Global Avançado
           </div>
           <div className="service_description grow_text">
-            Rede de alta velocidade com rotas inteligente, garantindo latência
-            mínima e máxima eficiência de tráfego
+            Conectividade direta com as maiores redes globais para baixa
+            latência, presença estratégica em mais de 20 pontos de troca de
+            tráfego (IXs) internacionais
           </div>
         </div>
       </div>

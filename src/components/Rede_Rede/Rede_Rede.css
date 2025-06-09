@@ -1,0 +1,109 @@
+.rede_container {
+  background: #fefefe;
+  color: #0a0a0a;
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 24px;
+}
+
+.rede_title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.rede_description {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.rede_card {
+  background: #f9f9f9;
+  border: #d2d3d9 1px solid;
+  border-radius: 16px;
+  padding: 32px;
+  width: 600px;
+  display: grid;
+  gap: 16px;
+}
+
+.rede_card_title_container {
+  display: flex;
+  gap: 16px;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.rede_card_title {
+  color: #006fcf;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.rede_card_item_container {
+  display: grid;
+  gap: 8px;
+}
+
+.rede_card_item_title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rede_list {
+  display: grid;
+  gap: 16px;
+}
+
+.list_title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.list_item_container {
+  display: grid;
+  gap: 8px;
+}
+
+.list_item {
+  display: flex;
+  gap: 8px;
+}
+
+.rede_pad {
+  padding-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+  .rede_container {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .rede_title {
+    font-size: 24px;
+  }
+
+  .rede_description {
+    display: grid;
+    gap: 24px;
+  }
+
+  .rede_card {
+    width: 350px;
+  }
+
+  .rede_list {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+}

@@ -21,7 +21,7 @@
 .service {
   cursor: pointer;
   width: 350px;
-  height: 300px;
+  height: 320px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -37,14 +37,6 @@
 }
 .service:hover {
   background: #25057e;
-}
-
-.grow_text {
-  transition: font-size 0.5s ease;
-}
-
-.grow_text:hover {
-  font-size: 18px;
 }
 
 .grow_title {
