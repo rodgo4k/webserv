@@ -1,8 +1,11 @@
 .loading_container {
-  position: absolute;
-  display: flex;
+  position: fixed;
+  display: grid;
   align-items: center;
+  align-content: center;
+  justify-items: center;
   justify-content: center;
+  gap: 8px;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,35 +30,18 @@
   }
 }
 
-.loading_text {
-  color: #fefefe;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
+.icon_box {
+  animation: floatUp 2s ease-in-out infinite;
 }
 
-.bg_img {
-  width: 500px;
-  height: 500px;
-  animation: spin 210s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-20px);
   }
-}
-
-@media (max-width: 480px) {
-  .loading_container {
-    display: grid;
-  }
-
-  .bg_img {
-    width: 200px;
-    height: 200px;
+  100% {
+    transform: translateY(0);
   }
 }

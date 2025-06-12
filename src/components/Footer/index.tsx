@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import Image from "next/image";
-import footer_logo from "../../assets/logo_blue.png";
+import footer_logo from "../../assets/logo_mobile.png";
 import cards_logo from "../../assets/cards_logos.svg";
 import safebrowsing from "../../assets/safe_browsing.svg";
 import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";

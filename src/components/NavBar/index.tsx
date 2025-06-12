@@ -3,7 +3,6 @@ import React from "react";
 import "./NavBar.css";
 import Image from "next/image";
 import logoImg from "../../assets/logo.png";
-import logoImgMob from "../../assets/logo_mobile.png";
 import flag from "../../assets/brazil_flag.png";
 import { SlArrowDown } from "react-icons/sl";
 import { useState } from "react";
@@ -17,7 +16,7 @@ export default function NavBar() {
     <div className="nav_div">
       <nav>
         <div className="container_nav">
-          <div>
+          <div className="logo_box">
             <Link href="/">
               <Image src={logoImg} alt="Logo" className="logo_img" />
             </Link>
@@ -72,7 +71,7 @@ export default function NavBar() {
             </button>
 
             <div className="logo_mobile">
-              <Image className="logo_mobile_img" src={logoImgMob} alt="Logo" />
+              <Image className="logo_mobile_img" src={logoImg} alt="Logo" />
             </div>
           </div>
 

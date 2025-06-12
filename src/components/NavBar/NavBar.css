@@ -50,8 +50,8 @@ nav {
 }
 
 .logo_mobile_img {
-  height: 32px;
-  width: 109px;
+  height: 30px;
+  width: 115px;
 }
 
 .container_nav {
@@ -62,12 +62,12 @@ nav {
 }
 
 .logo_box {
-  padding: 12px;
+  padding-top: 4px;
 }
 
 .logo_img {
-  width: 194px;
-  height: 44px;
+  width: 115px;
+  height: 30px;
 }
 
 .nav_box {

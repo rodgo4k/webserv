@@ -3,7 +3,8 @@ import "./loading.css";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import bg_img from "../assets/bg.png";
+import logo_icon from "../assets/logo_icon.png";
+import logo_text from "../assets//logo_text.png";
 
 export default function LoadingOverlay() {
   const [loading, setLoading] = useState(false);
@@ -12,7 +13,7 @@ export default function LoadingOverlay() {
   useEffect(() => {
     setLoading(true);
 
-    const timeout = setTimeout(() => setLoading(false), 2000);
+    const timeout = setTimeout(() => setLoading(false), 1000);
 
     return () => clearTimeout(timeout);
   }, [pathname]);
@@ -21,8 +22,12 @@ export default function LoadingOverlay() {
 
   return (
     <div className="loading_container">
-      <span className="loading_text">Carregando página...</span>
-      <Image src={bg_img} alt="background" className="bg_img" />
+      <div className="icon_box">
+        <Image src={logo_icon} alt="logo" />
+      </div>
+      <div className="text_box">
+        <Image src={logo_text} alt="WebServ" />
+      </div>
     </div>
   );
 }
