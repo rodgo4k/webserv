@@ -8,6 +8,7 @@ import { SlArrowDown } from "react-icons/sl";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import Link from "next/link";
+import { IoHomeOutline } from "react-icons/io5";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,9 @@ export default function NavBar() {
           <div className="nav_box">
             <div className="nav_box">
               <div className="nav_item">
-                <Link href="/">Início</Link>
+                <Link href="/">
+                  <IoHomeOutline size={24} color="#fefefe" />
+                </Link>
               </div>
               <div className="nav_item">
                 <Link href="/ServidoresVPS">Servidores VPS</Link>

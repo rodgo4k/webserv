@@ -23,10 +23,10 @@ export default function LoadingOverlay() {
   return (
     <div className="loading_container">
       <div className="icon_box">
-        <Image src={logo_icon} alt="logo" />
+        <Image src={logo_icon} alt="logo" className="icon_loading" />
       </div>
       <div className="text_box">
-        <Image src={logo_text} alt="WebServ" />
+        <Image src={logo_text} alt="WebServ" className="text_loading" />
       </div>
     </div>
   );
